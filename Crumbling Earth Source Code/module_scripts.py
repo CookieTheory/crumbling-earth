@@ -20841,11 +20841,7 @@ scripts = [
 		(gt, ":lord_troop_id", -1),
 		
 #normal_banner_begin
-        (troop_get_slot, ":cur_banner", ":lord_troop_id", slot_troop_banner_scene_prop),
-        (gt, ":cur_banner", 0),
-        (val_sub, ":cur_banner", banner_scene_props_begin),
-        (val_add, ":cur_banner", banner_map_icons_begin),
-        (party_set_banner_icon, ":center_no", ":cur_banner"),
+        (party_set_banner_icon, ":center_no", "icon_heraldic_banner_03"),
 # custom_banner_begin
 #        (troop_get_slot, ":flag_icon", ":lord_troop_id", slot_troop_custom_banner_map_flag_type),
 #        (ge, ":flag_icon", 0),
@@ -21705,12 +21701,8 @@ scripts = [
 
       #Setting the flag icon
       #normal_banner_begin
-      (troop_get_slot, ":cur_banner", ":troop_no", slot_troop_banner_scene_prop),
       (try_begin),
-        (gt, ":cur_banner", 0),
-        (val_sub, ":cur_banner", banner_scene_props_begin),
-        (val_add, ":cur_banner", banner_map_icons_begin),
-        (party_set_banner_icon, "$pout_party", ":cur_banner"),
+        (party_set_banner_icon, "$pout_party", "icon_heraldic_banner_03"),
       #custom_banner_begin
       #(troop_get_slot, ":flag_icon", ":troop_no", slot_troop_custom_banner_map_flag_type),
       #(try_begin),
@@ -31431,7 +31423,7 @@ scripts = [
           (gt, ":cur_banner", 0),
           (val_sub, ":cur_banner", banner_scene_props_begin),
           (val_add, ":cur_banner", banner_map_icons_begin),
-          (party_set_banner_icon, ":cur_center", ":cur_banner"),		  		  
+          (party_set_banner_icon, ":cur_center", "icon_heraldic_banner_03"),		  		  
         (try_end),
         
         (try_for_range, ":cur_center", villages_begin, villages_end),
@@ -50779,4 +50771,37 @@ scripts = [
     ]),
    #INVASION MODE END
      
+     
+   ## Crumbling earth start
+   
+   ("get_banner_mesh_for_party",
+        [
+            (store_script_param_1, ":party_id"),
+            (assign, ":lord_id", -1),
+            (try_begin),
+                (this_or_next|party_slot_eq, ":party_id", slot_party_type, spt_castle),
+                (party_slot_eq, ":party_id", slot_party_type, spt_town),
+                (party_get_slot, ":lord_id", ":party_id", slot_town_lord),
+            (else_try),
+                (eq, ":party_id", "p_main_party"),
+                (assign, ":lord_id", "trp_player"),
+            (else_try),
+                (party_slot_eq, ":party_id", slot_party_type, spt_kingdom_hero_party),
+                (party_get_num_companion_stacks, ":stacks", ":party_id"),
+                (gt, ":stacks", 0),
+                (party_stack_get_troop_id, ":lord_id", ":party_id", 0),
+            (try_end),
+            (try_begin),
+                (this_or_next|eq, ":lord_id", "trp_player"),
+                (is_between, ":lord_id", active_npcs_begin, active_npcs_end),
+                (troop_get_slot, reg0, ":lord_id", slot_troop_banner_scene_prop),
+                (val_sub, reg0, banner_scene_props_begin),
+                (val_add, reg0, banner_meshes_begin),
+            (else_try),
+                (assign, reg0, "mesh_banners_default_a"),
+            (try_end),
+        ]
+    ),
+    
+    ## Crumbling earth end
 ]
