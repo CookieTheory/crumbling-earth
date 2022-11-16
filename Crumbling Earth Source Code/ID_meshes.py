@@ -553,5 +553,7 @@ mesh_ccoop_default_class = 551
 mesh_ccoop_melee_class = 552
 mesh_ccoop_ranged_class = 553
 mesh_ccoop_mounted_class = 554
+mesh_heraldic_map_flag_03 = 555
+mesh_tableau_mesh_heraldic_banner_03 = 556
 
 

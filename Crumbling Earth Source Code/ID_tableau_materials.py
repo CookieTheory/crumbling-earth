@@ -53,3 +53,4 @@ tableau_retirement_troop = 51
 tableau_coop_companion_select_alpha_mask = 52
 tableau_coop_companion_select_color = 53
 tableau_coop_companion_select_0 = 54
+tableau_heraldic_banner_03 = 55

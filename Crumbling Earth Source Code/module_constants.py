@@ -1689,9 +1689,9 @@ custom_banner_flag_scene_props_begin = "spr_custom_banner_01"
 custom_banner_flag_scene_props_end = "spr_banner_a"
 
 custom_banner_map_icons_begin = "icon_custom_banner_01"
-custom_banner_map_icons_end = "icon_banner_01"
+custom_banner_map_icons_end = "icon_heraldic_banner_03"
 
-banner_map_icons_begin = "icon_banner_01"
+banner_map_icons_begin = "icon_heraldic_banner_03"
 banner_map_icons_end_minus_one = "icon_banner_136"
 
 banner_scene_props_begin = "spr_banner_a"

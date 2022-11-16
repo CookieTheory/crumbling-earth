@@ -54,12 +54,12 @@ pt_kingdom_5_reinforcements_c {!}kingdom_5_reinforcements_c 0 0 1 0 89 2 3 0 93 
 pt_kingdom_6_reinforcements_a {!}kingdom_6_reinforcements_a 0 0 1 0 99 5 10 0 100 2 4 0 -1 -1 -1 -1 
 pt_kingdom_6_reinforcements_b {!}kingdom_6_reinforcements_b 0 0 1 0 104 2 4 0 101 2 3 0 100 1 3 0 -1 -1 -1 
 pt_kingdom_6_reinforcements_c {!}kingdom_6_reinforcements_c 0 0 1 0 107 3 5 0 -1 -1 -1 -1 -1 
-pt_steppe_bandit_lair Steppe_Bandit_Lair 562949955519676 0 3 312 119 15 58 0 -1 -1 -1 -1 -1 
-pt_taiga_bandit_lair Tundra_Bandit_Lair 562949955519676 0 3 312 120 15 58 0 -1 -1 -1 -1 -1 
-pt_desert_bandit_lair Desert_Bandit_Lair 562949955519676 0 3 312 121 15 58 0 -1 -1 -1 -1 -1 
-pt_forest_bandit_lair Forest_Bandit_Camp 562949955519676 0 3 312 117 15 58 0 -1 -1 -1 -1 -1 
-pt_mountain_bandit_lair Mountain_Bandit_Hideout 562949955519676 0 3 312 116 15 58 0 -1 -1 -1 -1 -1 
-pt_sea_raider_lair Sea_Raider_Landing 562949955519676 0 3 312 118 15 50 0 -1 -1 -1 -1 -1 
-pt_looter_lair Kidnappers'_Hideout 562949955519676 0 3 312 113 15 25 0 -1 -1 -1 -1 -1 
+pt_steppe_bandit_lair Steppe_Bandit_Lair 562949955519536 0 3 312 119 15 58 0 -1 -1 -1 -1 -1 
+pt_taiga_bandit_lair Tundra_Bandit_Lair 562949955519536 0 3 312 120 15 58 0 -1 -1 -1 -1 -1 
+pt_desert_bandit_lair Desert_Bandit_Lair 562949955519536 0 3 312 121 15 58 0 -1 -1 -1 -1 -1 
+pt_forest_bandit_lair Forest_Bandit_Camp 562949955519536 0 3 312 117 15 58 0 -1 -1 -1 -1 -1 
+pt_mountain_bandit_lair Mountain_Bandit_Hideout 562949955519536 0 3 312 116 15 58 0 -1 -1 -1 -1 -1 
+pt_sea_raider_lair Sea_Raider_Landing 562949955519536 0 3 312 118 15 50 0 -1 -1 -1 -1 -1 
+pt_looter_lair Kidnappers'_Hideout 562949955519536 0 3 312 113 15 25 0 -1 -1 -1 -1 -1 
 pt_bandit_lair_templates_end {!}bandit_lair_templates_end 562949953422345 0 2 312 118 15 50 0 -1 -1 -1 -1 -1 
 pt_leaded_looters Band_of_robbers 2251799813947401 0 3 312 926 1 1 0 113 3 3 0 -1 -1 -1 -1 
