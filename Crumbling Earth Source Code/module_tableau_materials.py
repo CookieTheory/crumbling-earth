@@ -1034,6 +1034,7 @@ tableaus = [
         [
             (store_script_param, ":banner_mesh", 1),
             (set_fixed_point_multiplier, 100),
+            (gt, ":banner_mesh", 0),
             (init_position, pos1),(position_set_x, pos1, -16),(position_set_y, pos1, 100),(position_move_z, pos1, -20),
             (cur_tableau_add_mesh, ":banner_mesh", pos1, 87, 0),
             (init_position, pos1),(position_set_z, pos1, 10),
