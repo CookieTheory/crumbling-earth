@@ -1028,5 +1028,19 @@ tableaus = [
      (cur_tableau_add_tableau_mesh, "tableau_coop_companion_select_alpha_mask", ":troop_no", pos1, 0, 0),
      ]),
      
-     
+  ## Crumbling earth start
+  
+  ("heraldic_banner_03", 0, "missiles", 512, 256, 0, 0, 0, 0,
+        [
+            (store_script_param, ":banner_mesh", 1),
+            (set_fixed_point_multiplier, 100),
+            (init_position, pos1),(position_set_x, pos1, -16),(position_set_y, pos1, 100),(position_move_z, pos1, -20),
+            (cur_tableau_add_mesh, ":banner_mesh", pos1, 87, 0),
+            (init_position, pos1),(position_set_z, pos1, 10),
+            (cur_tableau_add_mesh, "mesh_tableau_mesh_heraldic_banner_03", pos1, 0, 0),
+            (cur_tableau_set_camera_parameters, 0, 100, 200, 0, 100000),
+        ]
+    ),
+    
+  ## Crumbling earth end
 ]

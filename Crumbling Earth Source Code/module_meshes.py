@@ -611,4 +611,11 @@ meshes = [
   ("ccoop_ranged_class", 0, "ccoop_ranged_class", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("ccoop_mounted_class", 0, "ccoop_mounted_class", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 #INVASION MODE END
+
+  ## Crumbling earth start
+  
+  ("heraldic_map_flag_03", 0, "heraldic_map_flag_03",  0, 0, 0, -90, 0, 90, 1, 1, 1),
+  ("tableau_mesh_heraldic_banner_03", 0, "tableau_mesh_heraldic_banner_03", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+  
+  ## Crumbling earth end
 ]
